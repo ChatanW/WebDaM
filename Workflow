@@ -1,0 +1,14 @@
+PROJECT:
+ * DataContainerInfo, DataContainerId
+ * DataLoaderId, DataContainerId
+ * ModelId, DataContainerId
+ 
+LOADING:
+ * Load "fs/project" DataContainer as "master" and execute("LIST CONTAINER; LIST LOADER; LIST MODEL;")
+ * Load each DataContainer via Info, associate Id
+ * Load each DataLoader via DataContainer[DataContainerId]->execute("INFO LOADER %s", DataLoaderId)
+ * Load each ModelInfo via DataContainer[DataContainerId]->execute("INFO LOADER %s", ModelId)
+
+
+
+
